@@ -2211,9 +2211,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 28:
-/*!**************************************************!*\
-  !*** D:/githubcode1/wumei/common/html-parser.js ***!
-  \**************************************************/
+/*!***************************************************************!*\
+  !*** D:/githubcode1/wumeizhineng/wumei/common/html-parser.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8623,9 +8623,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 38:
-/*!*******************************************!*\
-  !*** D:/githubcode1/wumei/common/util.js ***!
-  \*******************************************/
+/*!********************************************************!*\
+  !*** D:/githubcode1/wumeizhineng/wumei/common/util.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9147,9 +9147,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 5:
-/*!***************************************!*\
-  !*** D:/githubcode1/wumei/pages.json ***!
-  \***************************************/
+/*!****************************************************!*\
+  !*** D:/githubcode1/wumeizhineng/wumei/pages.json ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
