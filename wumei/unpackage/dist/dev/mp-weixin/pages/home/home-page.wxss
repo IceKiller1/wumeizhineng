@@ -1,0 +1,6 @@
+
+.page-home{
+	height: 1000px;
+	background-color: #E4E7E8;
+}
+
