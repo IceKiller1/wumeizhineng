@@ -15,7 +15,17 @@
 	{
 	  "path": "pages/me/me",
 	  "style": {}
-	}
+	},
+  {
+    "path": "pages/dynamic/detail",
+    "style": {
+      "app-plus": {
+        "titleNView": {
+          "type": "transparent"
+        }
+      }
+    }
+  }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
