@@ -15,9 +15,25 @@
 	{
 	  "path": "pages/me/me",
 	  "style": {
-		  "navigationBarTitleText": "个人中心"
-	  }
-	}
+	},
+  {
+    "path": "pages/dynamic/detail",
+    "style": {
+      "app-plus": {
+        "titleNView": {
+          "type": "transparent"
+        }
+      }
+    }
+    "path": "pages/dynamic/detail",
+    "style": {
+      "app-plus": {
+        "titleNView": {
+          "type": "transparent"
+        }
+      }
+    }
+  }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
@@ -55,7 +71,7 @@
 	  		"pagePath": "pages/dynamic/dynamic",
 	  		"iconPath": "static/tabbar/dynamic.png",
 	  		"selectedIconPath": "static/tabbar/dynamic-active.png",
-	  		"text": "动态"
+	  		"text": "动�
 	  	},
 	  	{
 	  		"pagePath": "pages/me/me",
