@@ -14,7 +14,9 @@
 	},
 	{
 	  "path": "pages/me/me",
-	  "style": {}
+	  "style": {
+		  "navigationBarTitleText": "个人中心"
+	  }
 	}
   ],
   "globalStyle": {
