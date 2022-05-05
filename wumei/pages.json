@@ -1,23 +1,26 @@
 {
-  "pages": [{
-      "path": "pages/news/index",
+  "pages": [
+	  {
+      "path": "pages/home/home",
       "style": {}
     },
-    {
-      "path": "pages/news/detail",
-      "style": {
-        "app-plus": {
-          "titleNView": {
-            "type": "transparent"
-          }
-        }
-      }
-    }
+	{
+	  "path": "pages/scene/scene",
+	  "style": {}
+	},
+	{
+	  "path": "pages/dynamic/dynamic",
+	  "style": {}
+	},
+	{
+	  "path": "pages/me/me",
+	  "style": {}
+	}
   ],
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "新闻资讯",
-    "navigationBarBackgroundColor": "#2F85FC",
+    "navigationBarTitleText": "物美智能",
+    "navigationBarBackgroundColor": "#4a4b84",
     "backgroundColor": "#FFFFFF"
   },
   "rightWindow": {
@@ -28,5 +31,36 @@
     "matchMedia": {
       "minWidth": 768
     }
+  },
+  "tabBar":{
+	  "borderStyle": "black",
+	  "backgroundColor": "#FFFFFF",
+	  "color": "#bfc5e2",
+	  "selectedColor": "#4a4b84",
+	  "list": [{
+	  		"pagePath": "pages/home/home",
+	  		"iconPath": "static/tabbar/home.png",
+	  		"selectedIconPath": "static/tabbar/home-active.png",
+	  		"text": "首页"
+	  	},
+	  	{
+	  		"pagePath": "pages/scene/scene",
+	  		"iconPath": "static/tabbar/scene.png",
+	  		"selectedIconPath": "static/tabbar/scene-active.png",
+	  		"text": "场景"
+	  	},
+	  	{
+	  		"pagePath": "pages/dynamic/dynamic",
+	  		"iconPath": "static/tabbar/dynamic.png",
+	  		"selectedIconPath": "static/tabbar/dynamic-active.png",
+	  		"text": "动态"
+	  	},
+	  	{
+	  		"pagePath": "pages/me/me",
+	  		"iconPath": "static/tabbar/center.png",
+	  		"selectedIconPath": "static/tabbar/center-active.png",
+	  		"text": "我的"
+	  	}
+	  ]
   }
 }
