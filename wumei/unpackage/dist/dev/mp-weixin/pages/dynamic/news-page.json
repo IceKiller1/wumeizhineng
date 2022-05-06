@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "news-item": "/pages/dynamic/news-item"
+  },
+  "component": true
+}
