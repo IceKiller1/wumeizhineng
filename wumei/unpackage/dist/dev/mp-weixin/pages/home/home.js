@@ -136,34 +136,97 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homePage = function homePage() {__webpack_require__.e(/*! require.ensure | pages/home/home-page */ "pages/home/home-page").then((function () {return resolve(__webpack_require__(/*! ./home-page.vue */ 40));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  components: {
-    homePage: homePage },
-
+// import homePage from './home-page.vue';
+var _default = {
+  // components: {
+  // 	homePage
+  // },
   data: function data() {
     return {
       tabList: [{
@@ -189,21 +252,36 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         deviceId: 0,
         name: "开源WIFI通断器",
         status: 0,
-        isShadow: 0 },
+        isShadow: 0,
+        condition: 0 },
 
       {
         deviceId: 1,
         name: "开源WIFI通断器",
         status: 0,
-        isShadow: 0 },
+        isShadow: 0,
+        condition: 0 },
 
       {
         deviceId: 2,
         name: "开源WIFI通断器",
         status: 0,
-        isShadow: 0 }],
+        isShadow: 0,
+        condition: 0 }],
 
-      tabIndex: 0 };
+
+      tabIndex: 0,
+      date: ["低速档位", "中速档位", "高速档位"],
+      dateCheckedId: 0,
+      showMenu: false,
+      windowHeight: 0 };
+
+  },
+  onLoad: function onLoad() {var _this = this;
+    uni.getSystemInfo({
+      success: function success(res) {
+        _this.windowHeight = res.windowHeight - 40;
+      } });
 
   },
   methods: {
@@ -212,7 +290,25 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     },
     swipertap: function swipertap(e) {
       this.tabIndex = e.detail.current;
+    },
+    changeStatus: function changeStatus(id) {
+      for (var i = 0; i < this.objectList.length; i++) {
+
+        if (this.objectList[i].deviceId == id) {
+          if (this.objectList[i].status == 0) this.objectList[i].status = 1;else
+          if (this.objectList[i].status == 1) this.objectList[i].status = 0;
+          console.log(this.objectList[i].status);
+        }
+      }
+    },
+    bindPickerChange: function bindPickerChange(e) {
+      console.log(e.detail.value);
+      this.objectList[this.dateCheckedId].condition = e.detail.value;
+    },
+    clickPicker: function clickPicker(id) {
+      this.dateCheckedId = id;
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */

@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/home/home-page":1};
+/******/ 		var cssChunks = {"pages/dynamic/news-page":1,"pages/dynamic/news-item":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pages/home/home-page":"pages/home/home-page"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pages/dynamic/news-page":"pages/dynamic/news-page","pages/dynamic/news-item":"pages/dynamic/news-item"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

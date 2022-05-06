@@ -1,49 +1,206 @@
 
 .index {
-	width: 100%;
-	height: 100%;
-	background-color: #e4e7e8;
+		width: 100%;
+		height: 100%;
+		background-color: #e4e7e8;
 }
 .home-top {
-	margin-top: 5px;
-	padding-bottom: 5px;
-	background-color: #FFFFFF;
-	white-space: nowrap;
+		margin-top: 10rpx;
+		padding-bottom: 10rpx;
+		background-color: #FFFFFF;
+		white-space: nowrap;
 }
 .uni-tab-item {
-	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px;
+		display: inline-block;
+		padding-left: 20rpx;
+		padding-right: 20rpx;
 }
 .uni-tab-item-title {
-	color: #bfc5e2;
-	font-size: 18px;
-	height: 30px;
-	line-height: 30px;
-	flex-wrap: nowrap;
-	white-space: nowrap;
+		color: #bfc5e2;
+		font-size: 36rpx;
+		height: 60rpx;
+		line-height: 60rpx;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+		transition: all 0.5s;
 }
 .uni-tab-item-title-active {
-	color: #4a4b84;
-	padding-bottom: 1px;
-	border-bottom: solid 3px #4a4b84;
-}
-.scroll-view-indicator {
-	position: relative;
-	height: 2px;
-	background-color: transparent;
-}
-.scroll-view-underline {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 0;
-	background-color: #4a4b84;
+		color: #4a4b84;
+		padding-bottom: 2rpx;
+		border-bottom: solid 6rpx #4a4b84;
+		transition: all 0.5s;
 }
 .scroll-view-animation {
-	transition-duration: 0.2s;
-	transition-property: left;
+		transition-duration: 0.2s;
+		transition-property: left;
 }
-.obj-box{
+
+	/* 	.home-swiper {
+		height: 800rpx;
+	}
+ */
+.obj-flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+}
+.obj-box {
+		margin-top: 20rpx;
+		margin-left: 20rpx;
+		margin-right: 20rpx;
+		width: 44%;
+		border: solid 1rpx #6e77ae;
+		border-radius: 10rpx;
+}
+.obj-name-box {
+		background-color: #6e77ae;
+		height: 55rpx;
+		border-radius: 10rpx 10rpx 0 0;
+}
+.obj-name-img {
+		float: left;
+		margin-top: 8rpx;
+		margin-left: 5rpx;
+		width: 40rpx;
+}
+.obj-name {
+		padding-top: 12rpx;
+		height: 30rpx;
+		line-height: 30rpx;
+		font-size: 30rpx;
+		color: #FFFFFF;
+}
+.obj-status {
+		width: 35rpx;
+}
+.in-one-line {
+		display: flex;
+		flex-direction: row;
+}
+.in-one-column {
+		display: flex;
+		flex-direction: column;
+}
+.obj-info-box {
+		background-color: #FFFFFF;
+		padding: 20rpx;
+		border-radius: 0 0 10rpx 10rpx;
+}
+.obj-info-line {
+		margin-bottom: 20rpx;
+		align-items: center;
+		line-height: 40rpx;
+}
+.obj-line {
+		width: 50%;
+}
+.obj-info-check {
+		height: 50rpx;
+		width: 100%;
+		overflow: hidden;
+}
+.obj-line-text {
+		margin-left: 8rpx;
+		font-size: 13px;
+}
+.obj-line-switch{
+		width: 70%;
+		margin-left: 8rpx;
+		font-size: 13px;
+}
+.obj-line-d{
+		width: 100%;
+		margin-left: 8rpx;
+		font-size: 13px;
+}
+.obj-switch {
+		color: #dee0f0;
+}
+.obj-checked {
+		margin-left: 20rpx;
+		width: 100%;
+}
+.checked-bg {
+		width: 80rpx;
+		height: 40rpx;
+		background-color: #DEE0F0;
+		border: 1px solid #DEE0F0;
+		border-radius: 5rpx;
+		transition: all 0.5s;
+}
+.checked-bg-checked {
+		width: 80rpx;
+		height: 40rpx;
+		background-color: #9ea0c9;
+		border: 1px solid #9ea0c9;
+		border-radius: 5rpx;
+		transition: all 0.5s;
+}
+.checked-btn {
+		position: relative;
+		top: -42rpx;
+		left: 2rpx;
+		width: 40rpx;
+		height: 40rpx;
+		background-color: #FFFFFF;
+		transition: all 0.5s;
+}
+.checked-btn-checked {
+		position: relative;
+		top: -42rpx;
+		left: 42rpx;
+		width: 40rpx;
+		height: 40rpx;
+		background-color: #FFFFFF;
+		transition: all 0.5s;
+}
+.obj-info-choose {
+		width: 100%;
+		line-height: 55rpx;
+}
+.obj-choose {
+		width: 100%;
+		overflow: hidden;
+		line-height: 50rpx;
+		margin-left: -34rpx;
+}
+.obj-choose-head {
+		width: 155rpx;
+		border-radius: 5rpx;
+		height: 50rpx;
+		border: 1px solid #bbbcbd;
+}
+.obj-choose-text {
+		width: 105rpx;
+		height: 50rpx;
+		font-size: 13px;
+		margin-left: 10rpx;
+}
+.obj-choose-image {
+		margin: 15rpx 5rpx 0 0;
+		width: 25rpx;
+		position: relative;
+		top: -50rpx;
+		left: 120rpx;
+}
+.obj-line-btn{
+		width: 60%;
+		/* height: 60rpx; */
+		line-height: 55rpx;
+		font-size: 13px;
+		margin-right: 20rpx;
+		padding: 5rpx 25rpx;
+		background-color: #FFFFFF;
+}
+.obj-line-msg{
+		width: 100%;
+		font-size: 14px;
+		border-radius: 5rpx;
+		padding-top: 10rpx;
+		padding-bottom: 10rpx;
+		padding-left: 8rpx;
+/* 		height: 40rpx; */
+		line-height: 20rpx;
+		border: 1px solid #bbbcbd;
 }
 

@@ -14,17 +14,9 @@
 	},
 	{
 	  "path": "pages/me/me",
-	  "style": {
+	  "style": {}
 	},
   {
-    "path": "pages/dynamic/detail",
-    "style": {
-      "app-plus": {
-        "titleNView": {
-          "type": "transparent"
-        }
-      }
-    }
     "path": "pages/dynamic/detail",
     "style": {
       "app-plus": {
@@ -71,7 +63,7 @@
 	  		"pagePath": "pages/dynamic/dynamic",
 	  		"iconPath": "static/tabbar/dynamic.png",
 	  		"selectedIconPath": "static/tabbar/dynamic-active.png",
-	  		"text": "动�
+	  		"text": "动态"
 	  	},
 	  	{
 	  		"pagePath": "pages/me/me",
