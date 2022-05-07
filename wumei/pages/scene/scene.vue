@@ -24,20 +24,20 @@
 								<view class="obj-info-line in-one-line">
 									<view class="obj-line in-one-line">
 										<image class="obj-status" mode="widthFix"
-											src="../../static/pages/home/wifi.png"></image>
+											src="../../static/pages/scene/note.png"></image>
 										<view class="obj-line-text">备注信...无</view>
 									</view>
 								</view>
 								<view class="obj-info-line in-one-line">
 									<view class="obj-line in-one-line">
 										<image class="obj-status" mode="widthFix"
-											src="../../static/pages/home/wifi.png"></image>
+											src="../../static/pages/scene/condition.png"></image>
 										<view class="obj-line-text">满足条...所有/任一</view>
 									</view>
 								</view>
 								<view class="obj-info-line in-one-line">
 									<image class="obj-status" mode="widthFix"
-										src="../../static/pages/home/wifi.png"></image>
+										src="../../static/pages/scene/carry.png"></image>
 									<view class="obj-info-check in-one-line">
 										<view class="obj-line-switch">执行一次</view>
 										<view class="obj-checked" @click="changeStatus(obj.deviceId)">
@@ -48,7 +48,7 @@
 								</view>
 								<view class="obj-info-line in-one-line">
 									<image class="obj-status" mode="widthFix"
-										src="../../static/pages/home/wifi.png"></image>
+										src="../../static/pages/scene/scenc.png"></image>
 									<view class="obj-info-check in-one-line">
 										<view class="obj-line-switch">场景状态</view>
 										<view class="obj-checked" @click="changeStatus(obj.deviceId)">
