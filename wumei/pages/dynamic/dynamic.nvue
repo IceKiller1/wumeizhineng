@@ -1,27 +1,5 @@
 <template>
   <view class="tabs">
-    <view class="margin-wrap">
-      <!-- 轮播图开始-->
-      <swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
-        :duration="duration">
-        <swiper-item>
-          <image class="swiper-item bgtest " src="../../static/tabbar/dynamic-active.png">
-          </image>
-        </swiper-item>
-        <swiper-item>
-          <image class="swiper-item bgtest" src="../../static/tabbar/dynamic-active.png">
-        </swiper-item>
-        <swiper-item>
-          <image class="swiper-item bgtest" src="../../static/tabbar/dynamic-active.png">
-        </swiper-item>
-      </swiper>
-      <!-- 轮播图结束-->
-    </view>
-    <view class="tag">
-      <image class="imgxgxx" src="../../static/dynstatic/xgxx.png"></icon>
-      <view class="tagtext">相关信息</view>
-    </view>
-    <view class="tab-bar-line"></view>
     <swiper class="tab-box" ref="swiper1" :current="tabIndex" :duration="300" @change="onswiperchange"
       @transition="onswiperscroll" @animationfinish="animationfinish" @onAnimationEnd="animationfinish">
       <swiper-item class="swiper-item" v-for="(page, index) in tabList" :key="index">
@@ -47,10 +25,6 @@
     data() {
       return {
         background: ['color1', 'color2', 'color3'],
-        indicatorDots: true,
-        autoplay: true,
-        interval: 2000,
-        duration: 500,
         tabList: [{
           id: "tab01",
           newsid: 0
@@ -261,20 +235,24 @@
   .margin-wrap {
     width: 690rpx;
     width: 100%;
+
     .swiper {
       height: 300rpx;
     }
+
     .bgtest {
       margin: 0 auto;
       // margin-top: 0rpx;
       background-color: black;
     }
+
     .swiper-item {
       display: block;
       line-height: 300rpx;
       height: 300rpx;
       text-align: center;
     }
+
     .imgswiper {
       width: 300rpx;
       height: 300rpx;
@@ -286,12 +264,14 @@
     height: 60rpx;
     text-align: left;
     margin-top: 20rpx;
+
     .imgxgxx {
       width: 20px;
       height: 20px;
       position: absolute;
       margin-left: 30rpx;
     }
+
     .tagtext {
       position: relative;
       margin-left: 70rpx;
@@ -299,6 +279,7 @@
       font-weight: 700;
     }
   }
+
   /* #ifndef APP-PLUS */
   page {
     width: 100%;
@@ -361,7 +342,7 @@
 
   .tab-bar-line {
     height: 1px;
-    
+
     background-color: #cccccc;
   }
 
