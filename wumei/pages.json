@@ -16,6 +16,22 @@
 	  "path": "pages/me/me",
 	  "style": {}
 	},
+	{
+	  "path": "pages/log/log",
+	  "style": {}
+	},
+	{
+	  "path": "pages/timing/timing",
+	  "style": {}
+	},
+	{
+	  "path": "pages/statistics/statistics",
+	  "style": {}
+	},
+	{
+	  "path": "pages/equipment/equipment",
+	  "style": {}
+	},
   {
     "path": "pages/dynamic/detail",
     "style": {

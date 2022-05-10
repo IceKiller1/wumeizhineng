@@ -195,7 +195,7 @@
 		margin-left: 20rpx;
 		margin-right: 20rpx;
 		width: 44%;
-		border: solid 1rpx #6e77ae;
+		border: solid 1rpx #7dbee9;
 		border-radius: 10rpx;
 	}
 

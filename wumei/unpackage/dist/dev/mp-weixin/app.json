@@ -4,6 +4,10 @@
         "pages/scene/scene",
         "pages/dynamic/dynamic",
         "pages/me/me",
+        "pages/log/log",
+        "pages/timing/timing",
+        "pages/statistics/statistics",
+        "pages/equipment/equipment",
         "pages/dynamic/detail"
     ],
     "subPackages": [],
