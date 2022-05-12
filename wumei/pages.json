@@ -17,6 +17,14 @@
 	  "style": {}
 	},
 	{
+		"path":"pages/me/login",
+		"style": {}
+	},
+	{
+		"path":"pages/me/register",
+		"style": {}
+	},
+	{
 	  "path": "pages/log/log",
 	  "style": {}
 	},

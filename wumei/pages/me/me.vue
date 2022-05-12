@@ -63,15 +63,28 @@
 	export default {
 		data(){
 			return {
-				windowHeight:0
+				windowHeight:0,
+				token: ''
 			}
 		},
 		onLoad() {
-			uni.getSystemInfo({
-				success: (res) => {
-					this.windowHeight = res.windowHeight;
+			this.getInfo();
+		},
+		methods:{
+			getInfo(){
+				uni.getSystemInfo({
+					success: (res) => {
+						this.windowHeight = res.windowHeight;
+					}
+				});
+				this.token = uni.getStorageSync("Token");
+				if(this.token == ''){
+					uni.navigateTo({
+						url: 'login',
+						animationType: 'zoom-fade-out'
+					})
 				}
-			});
+			}
 		}
 	}
 </script>
